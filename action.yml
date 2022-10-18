@@ -1,4 +1,4 @@
-name: 'Run Dastardly Scan'
+name: 'Dastardly Scan Action'
 description: 'Runs a Dastardly scan against a target site'
 inputs:
   target-url:

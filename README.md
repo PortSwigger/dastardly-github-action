@@ -4,13 +4,13 @@ This action runs a Dastardly scan against a target site and creates a JUnit XML 
 
 ## Inputs
 
-## `target-url`
+### `target-url`
 
-**Required** The full url of the site to scan.
+**Required** The full URL of the site to scan.
 
-## `output-filename`
+### `output-filename`
 
-**Optional** Where the output report file should be saved.
+**Optional** Where the output report file should be saved (in the `/github/workspace` directory).
 
 **Default** `dastardly-report.xml`
 
@@ -21,7 +21,7 @@ Below are some examples of how to use the action by running a Dastardly scan aga
 ```
 steps:
   - name: Run Dastardly Action Step
-    uses: actions/hello-world-docker-action@v1
+    uses: PortSwigger/dastardly-scan-action@v1
     with:
       target-url: 'https://ginandjuice.shop'
 ```
@@ -35,7 +35,7 @@ use case, but you may want to consider pairing this action with a JUnit XML pars
 steps:
   - name: Run Dastardly Action Step
     continue-on-error: true                        # This allows subsequent steps to run even if this step fails
-    uses: actions/hello-world-docker-action@v1
+    uses: PortSwigger/dastardly-scan-action@v1
     with:
       target-url: 'https://ginandjuice.shop'
 
