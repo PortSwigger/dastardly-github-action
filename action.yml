@@ -1,5 +1,6 @@
 name: 'Dastardly Scan Action'
 description: 'Runs a Dastardly scan against a target site'
+author: 'PortSwigger'
 inputs:
   target-url:
     description: 'The full url (including scheme) of the site to scan'
@@ -14,3 +15,6 @@ runs:
   env:
     DASTARDLY_TARGET_URL: ${{ inputs.target-url }}
     DASTARDLY_OUTPUT_FILE: /github/workspace/${{ inputs.output-filename }}
+branding:
+  icon: 'activity'
+  color: 'green'
