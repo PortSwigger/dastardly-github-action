@@ -31,7 +31,7 @@ vulnerable web application designed for testing web vulnerability scanners.
 ```
 steps:
   - name: Run Dastardly Action Step
-    uses: PortSwigger/dastardly-github-action@v1
+    uses: PortSwigger/dastardly-github-action@main
     with:
       target-url: 'https://ginandjuice.shop'
 ```
@@ -48,7 +48,7 @@ do this by adding `continue-on-error: true` to the Dastardly action step, or add
 steps:
   - name: Run Dastardly Action Step
     continue-on-error: true                        # This allows subsequent steps to run even if this step fails
-    uses: PortSwigger/dastardly-github-action@v1
+    uses: PortSwigger/dastardly-github-action@main
     with:
       target-url: 'https://ginandjuice.shop'
 
