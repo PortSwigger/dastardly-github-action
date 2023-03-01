@@ -5,11 +5,13 @@ they were located, additional information about the vulnerability and links to o
 
 ## About Dastardly
 
-[Dastardly](https://portswigger.net/burp/dastardly) is a free, lightweight web application security scanner for your CI/CD pipeline. It is designed specifically for web developers,
-and checks your application for seven security issues that are likely to interest you during software development. Dastardly is based on the same scanner as
-[Burp Suite](https://portswigger.net/burp) (Burp Scanner).
+- [Dastardly](https://portswigger.net/burp/dastardly) is a free, lightweight web application security scanner for your CI/CD pipeline.
+- It is designed specifically for web developers, and checks your application for [seven security issues](https://portswigger.net/burp/dastardly/scan-checks) that are likely to interest you during software development.
+- Dastardly is based on the same scanner as [Burp Suite](https://portswigger.net/burp) (Burp Scanner).
 
 For full documentation on using Dastardly, please consult the [Dastardly documentation](https://portswigger.net/burp/documentation/dastardly).
+
+Already used Dastardly? [Tell us what you think here](https://forms.gle/8Va7ombB793HqFKw5).
 
 ## Inputs
 
