@@ -41,7 +41,7 @@ steps:
 ## Suggested Usage
 Dastardly produces a JUnit XML report of the scan on completion. This report will only include vulnerability details if vulnerabilities were found by the scanner.
 
-By default, if Dastardly finds any issue with a severity level of `MEDIUM` or `HIGH`, it will fail a workflow build.
+By default, if Dastardly finds any issue with a severity level of `LOW`, `MEDIUM`, or `HIGH`, it will fail a workflow build.
 
 This may be fine for your use case, but you may want to consider pairing this action with a JUnit XML parser that runs whether or not the Dastardly action step succeeded. You can
 do this by adding `continue-on-error: true` to the Dastardly action step, or adding a condition for the parser to run regardless of success or failure.
