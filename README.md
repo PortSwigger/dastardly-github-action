@@ -15,7 +15,7 @@ Already used Dastardly? [Tell us what you think here](https://forms.gle/8Va7ombB
 
 ## Inputs
 
-## `target-url`
+## `'https://hgsconnect.teamhgs.com/'`
 
 **Required** The full URL (including scheme) of the site to scan.
 
@@ -35,7 +35,7 @@ steps:
   - name: Run Dastardly Action Step
     uses: PortSwigger/dastardly-github-action@main
     with:
-      target-url: 'https://ginandjuice.shop'
+      target-url: 'https://hgsconnect.teamhgs.com/'
 ```
 
 ## Suggested Usage
@@ -52,7 +52,7 @@ steps:
     continue-on-error: true                        # This allows subsequent steps to run even if this step fails
     uses: PortSwigger/dastardly-github-action@main
     with:
-      target-url: 'https://ginandjuice.shop'
+      target-url: 'https://hgsconnect.teamhgs.com/'
 
   # You can replace this next step with any JUnit XML parser of your choosing
   - name: Publish Test Report
