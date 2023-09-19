@@ -13,8 +13,8 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   env:
-    DASTARDLY_TARGET_URL: ${{ inputs.target-url }}
-    DASTARDLY_OUTPUT_FILE: /github/workspace/${{ inputs.output-filename }}
+    BURP_START_URL: ${{ inputs.target-url }}
+    BURP_REPORT_FILE_PATH: /github/workspace/${{ inputs.output-filename }}
 branding:
   icon: 'activity'
   color: 'green'
